@@ -1,3 +1,7 @@
+---
+output: rmarkdown::github_document
+---
+
 ## Creating a new list for another movie
 
 You found reviews of another, more recent, Jack Nicholson movie: The Departed!
