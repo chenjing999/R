@@ -17,9 +17,9 @@ Incorrect Submission
 Have you correctly adapted the code to select all columns for the planets that have rings? You can use planets_df[rings_vector, ]. Make sure to include the comma here, it's crucial!
 
 
-# planets_df and rings_vector are pre-loaded in your workspace
+### planets_df and rings_vector are pre-loaded in your workspace
 data.frame(planets_df)
 
 planets_df[rings_vector, ]
-# Adapt the code to select all columns for planets with rings
+### Adapt the code to select all columns for planets with rings
 planets_df[rings_vector, "name"]
