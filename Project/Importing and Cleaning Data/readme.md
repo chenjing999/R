@@ -137,7 +137,6 @@ Helpful links:
 
 arrange() documentation
 
-
 10. HINT
 
 A quick way to look at the games with the highest attendance is to arrange the attendance in descending order.
