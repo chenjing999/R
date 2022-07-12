@@ -84,7 +84,9 @@ In R, a list allows you to gather a variety of objects under one name in an orde
 Consider the following variables. 
 
 vec <- 1:6
+
 mat <- matrix(1:6, nrows=2)
+
 df <- data.frame(x="one", y=8, z=FALSE)
 
 Passing these variables as arguments to the list() function creates a list containing the three variables as list elements. 
@@ -100,10 +102,13 @@ print(my_list)
 [[2]]
 
      [,1] [,2] [,3]
+     
 [1,]    1    3    5
+
 [2,]    2    4    6
 
 [[3]]
 
      x y     z
+     
 1  one 8 FALSE
