@@ -1,3 +1,4 @@
+### Vector indexing
 You can pinpoint an element's position in a vector by its index. The first element has index 1, the second has index 2, and so on.
 
 You can select one or more elements from a vector by placing the index, or a vector of indexes, inside square brackets. age[1] selects the first element from the age vector, and age[c(2, 3)] subsets the second and third elements. 
