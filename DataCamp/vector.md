@@ -138,3 +138,44 @@ summary(f)
 
 easy hard med
    1    1   2
+   
+   
+### Adding data to a matrix
+Columns and rows can be added to matrices using built-in functions. 
+Consider the following matrix. 
+
+my_matrix
+
+     [,1] [,2]
+[1,]    1    4
+
+[2,]    2    3
+
+[3,]    4    1
+
+rbind() can be used to add additional rows to a matrix. 
+To do this, pass the matrix as the first argument to rbind() and a vector containing the new row values as the second. 
+
+rbind(my_matrix, c(6, 7))
+
+     [,1] [,2]
+
+[1,]    1    4
+
+[2,]    2    3
+
+[3,]    4    1
+
+[4,]    6    7
+
+Similarly, cbind() can be used to add columns. 
+
+cbind(my_matrix, 4:6)
+
+     [,1] [,2] [,3]
+
+[1,]    1    4    4
+
+[2,]    2    3    5
+
+[3,]    4    1    6
