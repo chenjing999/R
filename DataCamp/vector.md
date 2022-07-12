@@ -20,7 +20,9 @@ age <- c(32, 26, 89)
 names(age) <- c("Bob", "Joy", "Rex")
 
 age
-------------------------
+
+-----Output------:
+
 Bob Joy Rex
 
  32  26  89
