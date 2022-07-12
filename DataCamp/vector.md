@@ -115,3 +115,26 @@ print(my_list)
      x y     z
      
 1  one 8 FALSE
+
+
+### Summarizing a variable
+The summary() function provides an overview of a variable's contents. Passing summary() a character vector returns the number of vector elements. 
+
+summary(c("No", "No", "No", "Yes"))
+
+-----OUTPUT----:
+
+Length        Class       Mode
+
+     4    character  character
+
+Passing summary() a factor returns a named vector containing the count of each factor level. 
+
+f <- factor(c("easy", "hard", "med", "med"))
+
+summary(f)
+
+-----OUTPUT----:
+
+easy hard med
+   1    1   2
