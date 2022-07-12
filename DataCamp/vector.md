@@ -89,6 +89,7 @@ mat <- matrix(1:6, nrows=2)
 
 df <- data.frame(x="one", y=8, z=FALSE)
 
+
 Passing these variables as arguments to the list() function creates a list containing the three variables as list elements. 
 
 my_list <- list(vec, mat, df)
