@@ -179,3 +179,32 @@ cbind(my_matrix, 4:6)
 [2,]    2    3    5
 
 [3,]    4    1    6
+
+### Factor levels
+
+When you create factors with factor(), the levels are automatically given the same name as the factor elements.
+Consider the following factor v, which contains three levels: one, three, and two. 
+
+vals <- c("one", "two", "three")
+
+v <- factor(vals)
+
+v
+
+one   two   three
+
+Levels: one three two
+
+To rename the levels, apply levels() to the factor, and assign the result to a vector of new levels. 
+The new levels must be specified in the same order as the levels they are renaming. 
+
+levels(v) <- c(1, 3, 2) renames the levels of v from one, three, and twoto 1, 3, and 2. 
+The new levels are applied to the factor elements, changing the way they appear. 
+
+levels(v) <- c(1, 3, 2)
+
+v
+
+1 2 3
+
+Levels: 1 3 2
