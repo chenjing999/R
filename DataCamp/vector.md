@@ -208,3 +208,46 @@ v
 1 2 3
 
 Levels: 1 3 2
+
+
+### Comparing factors
+
+An ordered factor allows you to compare factor elements using comparison operators. 
+Consider the following ordered factor created using the factor() function. 
+
+diff <- c("easy", "hard", "med", "med")
+
+f <- factor(diff, ordered = TRUE, levels=c("easy", "med", "hard"))
+
+f
+
+easy hard med med
+
+Levels: easy med hard
+
+The elements of a factor are selected in the same way as vector elements. 
+
+f[1] returns the first element of the factor f, and f[2] returns the second element. 
+
+c(f[1], f[2], f[3], f[4]) 
+
+"easy" "hard" "med" "med"
+
+Elements can be compared, for example, f[1] > f[2]. 
+This returns FALSE because the first element, "easy", is two levels below the second element, "hard". 
+
+f[1] > f[2]
+
+FALSE
+
+Comparing unordered factors returns an error. 
+
+colors <- factor(c("red", "blue", "green", "green"))
+
+colors[1] > colors[2]
+
+NA
+
+Warning message:
+
+In Ops.factor(colors[1], colors[2]) : ‘>’ not meaningful for factors
